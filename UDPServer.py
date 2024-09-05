@@ -7,7 +7,7 @@ print("The server is ready to receive.")
 
 while True:
     message, client_address = server_socket.recvfrom(2048)
-    print(f"Received message: {message.decode()} from {client_address}")
+    print(f"Received message: '{message.decode()}' from {client_address}")
 
     modified_message = message.decode().upper()
     server_socket.sendto(modified_message.encode(), client_address)
