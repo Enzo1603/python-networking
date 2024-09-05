@@ -14,3 +14,7 @@ ruff = "^0.6.3"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+venvPath = "/home/enzo/.cache/pypoetry/virtualenvs"
+venv = "python-networking-SLSyfuMa-py3.12"
