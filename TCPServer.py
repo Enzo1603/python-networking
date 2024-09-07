@@ -1,11 +1,12 @@
 from socket import socket, AF_INET, SOCK_STREAM
 
-server_port = 12002
+server_port = 12001
 
 # AF_INET is the address family for IPv4
 # SOCK_STREAM is the socket type for TCP
 server_socket = socket(AF_INET, SOCK_STREAM)
 server_socket.bind(("", server_port))
+
 server_socket.listen(1)
 print("The server is ready to receive.")
 
