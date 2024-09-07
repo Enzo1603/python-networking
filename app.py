@@ -105,4 +105,4 @@ if __name__ == "__main__":
     udp_thread.daemon = True
     udp_thread.start()
 
-    app.run(debug=True, port=FLASK_PORT)
+    app.run(debug=True, port=FLASK_PORT, host="0.0.0.0")
