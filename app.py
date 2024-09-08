@@ -3,9 +3,9 @@ import threading
 
 from flask import Flask, render_template_string
 
-FLASK_PORT = 5000
-TCP_PORT = 5001
-UDP_PORT = 5002
+FLASK_PORT = 6000
+TCP_PORT = 6001
+UDP_PORT = 6002
 HTML_TEMPLATE = """
     <!DOCTYPE html>
     <html lang="en">

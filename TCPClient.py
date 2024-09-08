@@ -3,7 +3,7 @@ from socket import socket, AF_INET, SOCK_STREAM
 # server_name = "192.168.178.151"
 # server_port = 12002
 server_name = "127.0.0.1"
-server_port = 5001
+server_port = 6001
 
 # AF_INET is the address family for IPv4
 # SOCK_STREAM is the socket type for TCP
