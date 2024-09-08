@@ -21,9 +21,9 @@ RUN poetry config virtualenvs.create false && \
 # RUN apk del build-base
 
 # Ports veröffentlichen
-EXPOSE 5000
-EXPOSE 5001
-EXPOSE 5002/udp
+EXPOSE 7000
+EXPOSE 7001
+EXPOSE 7002/udp
 
 # Umgebungsvariablen setzen, um Flask im Produktionsmodus zu starten
 ENV FLASK_ENV=production

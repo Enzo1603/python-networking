@@ -1,7 +1,11 @@
+```bash
 sudo docker build -t traffic_server .
+```
 
-# 5002 UDP ??
+# 6002 UDP ??
 
-sudo docker run -dit -p 5000:5000 -p 5001:5001 -p 5002:5002 --name traffic_server traffic_server
+```bash
+sudo docker run -dit -p 7000:7000 -p 7001:7001 -p 7002:7002 --name traffic_server traffic_server
+```
 
 # kein Zugriff auf 5001, 5002? oder nur kein output?

@@ -3,9 +3,9 @@ import threading
 
 from flask import Flask, render_template_string
 
-FLASK_PORT = 6000
-TCP_PORT = 6001
-UDP_PORT = 6002
+FLASK_PORT = 7000
+TCP_PORT = 7001
+UDP_PORT = 7002
 HTML_TEMPLATE = """
     <!DOCTYPE html>
     <html lang="en">
@@ -97,9 +97,9 @@ def start_udp_server():
 
 
 if __name__ == "__main__":
-    tcp_thread = threading.Thread(target=start_tcp_server)
-    tcp_thread.daemon = True
-    tcp_thread.start()
+    # tcp_thread = threading.Thread(target=start_tcp_server)
+    # tcp_thread.daemon = True
+    # tcp_thread.start()
 
     udp_thread = threading.Thread(target=start_udp_server)
     udp_thread.daemon = True
