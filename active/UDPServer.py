@@ -1,6 +1,6 @@
 from socket import socket, AF_INET, SOCK_DGRAM
 
-server_port = 12002
+server_port = 7002
 server_socket = socket(AF_INET, SOCK_DGRAM)
 server_socket.bind(("", server_port))
 print("The server is ready to receive.")

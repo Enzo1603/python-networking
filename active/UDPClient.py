@@ -10,12 +10,12 @@ server_port = 7002
 # SOCK_DGRAM is the socket type for UDP
 client_socket = socket(AF_INET, SOCK_DGRAM)
 
-while True:
-    message = input("Input lowercase sentence: ")
 
-    client_socket.sendto(message.encode(), (server_name, server_port))
+message = input("Input lowercase sentence: ")
 
-    modified_message, server_address = client_socket.recvfrom(2048)
-    print(modified_message.decode())
+client_socket.sendto(message.encode(), (server_name, server_port))
+
+modified_message, server_address = client_socket.recvfrom(2048)
+print(modified_message.decode())
 
 client_socket.close()
